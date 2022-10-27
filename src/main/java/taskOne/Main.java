@@ -8,7 +8,7 @@ public class Main {
 
         while(true) {
             System.out.println("Skriv in ditt förnamn, med små bokstäver: ");
-            String name = scanner.nextLine();
+            String name = scanner.next();
             char firstLetter = name.charAt(0);
             System.out.println("Namnet börjar på bokstaven " + firstLetter);
             char letter = 'ö';
@@ -18,7 +18,7 @@ public class Main {
             break;
 
             /*
-            * Fick det inte att fungera så att while loopen fortsätter loopa även när man inte skriver in något
+            * Fick det inte att fungera så att while loopen fortsätter loopa även när man inte skriver in något, så jag använder next() istället
             *
              */
         }
